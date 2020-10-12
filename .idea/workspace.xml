@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0721ed9-6a17-4d5d-9199-b06fd3ac09d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/LectureTwo/LectureTwo_For.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LectureTwo/LectureTwo_For.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -28,12 +33,16 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/JAVA_Lecture-main" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.company.LectureThree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LectureThree_ComplexLists">
+  <component name="RunManager" selected="Application.LectureThree_SimpleLists">
     <configuration name="LectureThree_ComplexLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.LectureThree.LectureThree_ComplexLists" />
       <module name="Test123" />
@@ -101,8 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LectureThree_ComplexLists" />
         <item itemvalue="Application.LectureThree_SimpleLists" />
+        <item itemvalue="Application.LectureThree_ComplexLists" />
         <item itemvalue="Application.LectureThree_Read" />
         <item itemvalue="Application.LectureTwo_Student" />
         <item itemvalue="Application.LectureTwo_Methods" />
@@ -135,21 +144,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1602455191161">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1602503203995">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602503203995" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602502094672" />
+    <state width="1237" height="146" key="GridCell.Tab.0.bottom" timestamp="1602506492426">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="146" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1602506492426" />
     <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602455191161" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1602455191161">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="146" key="GridCell.Tab.0.center" timestamp="1602506492426">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="146" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1602506492426" />
     <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602455191161" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1602455191161">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="146" key="GridCell.Tab.0.left" timestamp="1602506492426">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="146" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1602506492426" />
     <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602455191161" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1602455191161">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1237" height="146" key="GridCell.Tab.0.right" timestamp="1602506492426">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="146" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1602506492426" />
     <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602455191161" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602451517077">
       <screen x="0" y="0" width="1920" height="1040" />
