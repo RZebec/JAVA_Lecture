@@ -30,4 +30,9 @@ public class Student {
     public int getMatrikelNummer() {
         return matrikelNummer;
     }
+
+    @Override
+    public String toString() {
+        return matrikelNummer + "," + nachname + "," + name + "," + alter;
+    }
 }

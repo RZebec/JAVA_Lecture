@@ -30,7 +30,7 @@ public class LectureThree_SimpleLists {
 
         System.out.println("Die TODOs in der Liste sind: ");
 
-        for (int i = 0; i < todos.size(); i++) {                                                // .size() returns the number of elements in the collection
+        for (int i = 0; i < todos.size(); i++) {                                              // .size() returns the number of elements in the collection
             System.out.println(todos.get(i) + ", ");                                            // .get(index) returns the value at given index
         }
     }
