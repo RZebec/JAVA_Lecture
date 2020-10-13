@@ -6,16 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LectureThree_ComplexLists {
-    public static void main(String[] args) {
-        Student max = new Student(21, "Max", "Mustermann",1282837);
+public class LectureThree_Streams {
+
+    public static void main(String... args) {
+        // the class inside of <> is the defining class for the list elements
+        List<Student> students = new ArrayList<>();
+
+        Student max = new Student(20, "Max", "Mustermann", 1282837);
         Student willy = new Student(23, "Willy", "Wanker", 3232123);
         Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329);
         Student mary = new Student(20, "Mary", "Dean", 1029203);
         Student monica = new Student(22, "Monica", "Maier", 1301230);
-
-        // the class inside of <> is the defining class for the list elements
-        List<Student> students = new ArrayList<>();
 
         // .add(student) adds value to collection (appends at end of list)
         students.add(max);
@@ -24,25 +25,10 @@ public class LectureThree_ComplexLists {
         students.add(mary);
         students.add(monica);
 
-        // .toString() returns a string representation such as "[Zimmer aufräumen, Lernen, Bier kaufen]"
-        System.out.println("Die TODOs in der Liste sind: " + students.toString());
-
-        // .size() returns the number of elements in the collection
-        System.out.println("Die Liste hat " + students.size() + " TODOs");
-
-        // .indexof("Element") returns first index where given value is found in list (-1 if not found)
-        System.out.println("Max befindet sich auf der position Nr. "
-                + (students.indexOf(max)));
-
-        // .remove(willy)
-        students.remove(1);
-
-        for(int i=0; i<students.size(); i++) {
-            students.get(i).exmatrikulieren();
-        }
+        System.out.println("\nUsing Java Streams: ");
 
         // Stream Example
-        List<Student> studentsAbove21 =
+        List<Student> above21Students =
                 students
                         // .stream() Converts the list to a Java Stream
                         .stream()
@@ -58,10 +44,12 @@ public class LectureThree_ComplexLists {
                         .collect(Collectors.toList());
 
         // .size() returns the number of elements in the collection
-        for (int i = 0; i < studentsAbove21.size(); i++) {
-            System.out.println(studentsAbove21.get(i) + ", ");
+        for (int i = 0; i < above21Students.size(); i++) {
+            // .size() returns the number of elements in the collection
+            System.out.println(above21Students.get(i) + ", ");
         }
+        // Stream Example
 
-
+        System.out.println("\nUsing FOR Loop: ");
     }
 }

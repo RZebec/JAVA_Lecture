@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LectureThree_Streams_Alternative {
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
 
         // the class inside of <> is the defining class for the list elements
         List<Student> students = new ArrayList<>();
