@@ -13,8 +13,22 @@ public class LectureFour_Filter {
         List<Student> students = LectureFour_Methods.readFile("./students.csv");
 
         // TODO: Filter out the students which are above 21 and write them to a separate file
+        List<Student> above21Students =
+                students
+                        // .stream() Converts the list to a Java Stream
+                        .stream()
+                        // Stream operation filter with lambda
+                        .filter(student -> student.alter > 23)
+                        // Stream operation sorting with lambda
+                        // Sorting the elements in a list in descending order by their age
+                        .sorted((studentA, studentB) -> {
+                            if(studentA.alter < studentB.alter) return 1;
+                            if(studentA.alter > studentB.alter) return -1;
+                            return 0;
+                        })
+                        .collect(Collectors.toList());
 
         // Write students back to the file
-        // LectureFour_Methods.writeFile(above21Students, "./above21Students.csv");
+        LectureFour_Methods.writeFile(above21Students, "./above21Students.csv");
     }
 }
