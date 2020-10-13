@@ -58,15 +58,24 @@ public class LectureFour_Methods {
 
     public static void writeFile(List<Student> students, String filePath) throws IOException {
         // TODO: Specify the file name and path here
+        File file = new File(filePath);
 
         // TODO: Checks if the file already exists and if not, creates a new one
+        if (!file.exists()) {
+            file.createNewFile();
+        }
 
         // TODO: Opens a connection to the file on the computer
+        BufferedWriter csvWriter = new BufferedWriter(new FileWriter(file));
 
         // TODO: Iterates through the list of students and adds each of them to the file
         // Writes a textual content (String) to the file
         // The entries are split into rows, after every entry the line break character "\n" is added
+        for(int i = 0; i < students.size(); i++) {
+            csvWriter.write(students.get(i).toString() + "\n");
+        }
 
         // TODO: Closes the connection to the file on the computer hard drive
+        csvWriter.close();
     }
 }
