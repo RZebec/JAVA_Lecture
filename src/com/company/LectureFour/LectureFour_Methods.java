@@ -16,7 +16,7 @@ public class LectureFour_Methods {
         String row;
 
         // Specify the file path here
-        String csvPfad = "./students.csv";
+        String csvPfad = filePath;
 
         // TODO: Create a connection to the file on the computer
         BufferedReader csvReader = new BufferedReader(new FileReader(csvPfad));
