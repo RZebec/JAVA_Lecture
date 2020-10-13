@@ -31,8 +31,16 @@ public class Student {
         return matrikelNummer;
     }
 
+    public String getStudentStatus() {
+        if(exmatrikuliert) {
+            return "exmatrikuliert";
+        } else {
+            return "immatrikuliert";
+        }
+    }
+
     @Override
     public String toString() {
-        return matrikelNummer + "," + nachname + "," + name + "," + alter;
+        return matrikelNummer + "," + nachname + "," + name + "," + alter + "," + getStudentStatus();
     }
 }

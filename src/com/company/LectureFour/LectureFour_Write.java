@@ -2,10 +2,7 @@ package com.company.LectureFour;
 
 import com.company.LectureTwo.Student;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,18 +34,28 @@ public class LectureFour_Write {
         students.add(emelie);
 
         // TODO: Find the index of till and kick him out
+        int tillIndex = students.indexOf(till);
+        students.get(tillIndex).exmatrikulieren();
 
         // TODO: Specify the file name and path here
+        File file = new File("./students.csv");
 
         // TODO: Checks if the file already exists and if not, creates a new one
+        if (!file.exists()) {
+            file.createNewFile();
+        }
 
         // TODO: Opens a connection to the file on the computer
+        BufferedWriter csvWriter = new BufferedWriter(new FileWriter(file));
 
         // TODO: Iterates through the list of students and adds each of them to the file
         // Writes a textual content (String) to the file
         // The entries are split into rows, after every entry the line break character "\n" is added
+        for(int i = 0; i < students.size(); i++) {
+            csvWriter.write(students.get(i).toString() + "\n");
+        }
 
         // TODO: Closes the connection to the file on the computer hard drive
-
+        csvWriter.close();
     }
 }
