@@ -2,17 +2,17 @@ package com.company.LectureThree;
 
 import com.company.LectureTwo.Student;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class LectureThree_ComplexLists {
-    public static void main(String[] args) {
-        Student max = new Student(21, "Max", "Mustermann",1282837);
-        Student willy = new Student(23, "Willy", "Wanker", 3232123);
-        Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329);
-        Student mary = new Student(20, "Mary", "Dean", 1029203);
-        Student monica = new Student(22, "Monica", "Maier", 1301230);
+    public static void main(String... args) throws IOException {
+        Student max = new Student(20, "Max", "Mustermann", 1282837, "BW-FS19");
+        Student willy = new Student(23, "Willy", "Wanker", 3232123, "BW-FS19");
+        Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329, "BW-FS19");
+        Student mary = new Student(20, "Mary", "Dean", 1029203, "BW-FS19");
+        Student monica = new Student(22, "Monica", "Maier", 1301230, "BW-FS19");
 
         // the class inside of <> is the defining class for the list elements
         List<Student> students = new ArrayList<>();
@@ -34,34 +34,18 @@ public class LectureThree_ComplexLists {
         System.out.println("Max befindet sich auf der position Nr. "
                 + (students.indexOf(max)));
 
-        // .remove(willy)
-        students.remove(1);
+        Student willy2 = new Student(23, "Will", "Ferrell", 3232123, "BW-FS20");
 
-        for(int i=0; i<students.size(); i++) {
-            students.get(i).exmatrikulieren();
+        students.set(students.indexOf(willy), willy2);
+
+        System.out.println("Die TODOs in der Liste sind: " + students.toString());
+
+        students.remove("Lernen");                                                          // .remove("Element") finds and removes the given value from this collection
+
+        System.out.println("Die TODOs in der Liste sind: ");
+
+        for (int i = 0; i < students.size(); i++) {                                            // .size() returns the number of elements in the collection
+            System.out.println(students.get(i) + ", ");                                        // .get(index) returns the value at given index
         }
-
-        // Stream Example
-        List<Student> studentsAbove21 =
-                students
-                        // .stream() Converts the list to a Java Stream
-                        .stream()
-                        // Stream operation filter with lambda
-                        .filter(student -> student.alter > 21)
-                        // Stream operation sorting with lambda
-                        // Sorting the elements in a list in descending order by their age
-                        .sorted((studentA, studentB) -> {
-                            if(studentA.alter < studentB.alter) return -1;
-                            if(studentA.alter > studentB.alter) return 1;
-                            return 0;
-                        })
-                        .collect(Collectors.toList());
-
-        // .size() returns the number of elements in the collection
-        for (int i = 0; i < studentsAbove21.size(); i++) {
-            System.out.println(studentsAbove21.get(i) + ", ");
-        }
-
-
     }
 }

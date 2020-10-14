@@ -12,11 +12,11 @@ public class LectureThree_Streams {
         // the class inside of <> is the defining class for the list elements
         List<Student> students = new ArrayList<>();
 
-        Student max = new Student(20, "Max", "Mustermann", 1282837);
-        Student willy = new Student(23, "Willy", "Wanker", 3232123);
-        Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329);
-        Student mary = new Student(20, "Mary", "Dean", 1029203);
-        Student monica = new Student(22, "Monica", "Maier", 1301230);
+        Student max = new Student(20, "Max", "Mustermann", 1282837, "BW-FS19");
+        Student willy = new Student(23, "Willy", "Wanker", 3232123, "BW-FS19");
+        Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329, "BW-FS19");
+        Student mary = new Student(20, "Mary", "Dean", 1029203, "BW-FS19");
+        Student monica = new Student(22, "Monica", "Maier", 1301230, "BW-FS19");
 
         // .add(student) adds value to collection (appends at end of list)
         students.add(max);

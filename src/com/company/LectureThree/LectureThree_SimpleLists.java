@@ -1,10 +1,11 @@
 package com.company.LectureThree;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class LectureThree_SimpleLists {
-    public static void main(String[] args) {
+    public static void main(String... args) throws IOException {
         List<String> todos = new ArrayList<>();
 
         todos.add("Zimmer aufräumen");                                                          // .add("Element") adds value to collection (appends at end of list)
@@ -30,7 +31,7 @@ public class LectureThree_SimpleLists {
 
         System.out.println("Die TODOs in der Liste sind: ");
 
-        for (int i = 0; i < todos.size(); i++) {                                              // .size() returns the number of elements in the collection
+        for (int i = 0; i < todos.size(); i++) {                                                // .size() returns the number of elements in the collection
             System.out.println(todos.get(i) + ", ");                                            // .get(index) returns the value at given index
         }
     }
