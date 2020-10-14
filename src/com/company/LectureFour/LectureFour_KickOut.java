@@ -13,8 +13,17 @@ public class LectureFour_KickOut {
 
         // TODO: Iterate through the list of students and kick every one out
         for(int i=0; i<students.size(); i++) {
-            students.get(i).exmatrikulieren();
+            if(students.get(i).alter > 21) {
+                students.get(i).exmatrikulieren();
+            }
         }
+
+        // TODO: equivalent with streams
+        students.forEach(student -> {
+            if (student.alter > 21) {
+                student.exmatrikulieren();
+            }
+        });
 
         // Write students back to the file
         LectureFour_Methods.writeFile(students, "./kickedOutStudents.csv");
