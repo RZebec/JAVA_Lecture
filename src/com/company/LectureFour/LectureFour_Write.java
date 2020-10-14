@@ -12,15 +12,15 @@ import java.util.List;
 public class LectureFour_Write {
     public static void main(String[] args) throws IOException {
         Student max = new Student(20, "Max", "Mustermann", 1282837, "BW-FS19");
-        Student willy = new Student(23, "Willy", "Wanker", 3232123, "BW-FS19");
-        Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329, "BW-FS19");
-        Student mary = new Student(20, "Mary", "Dean", 1029203, "BW-FS19");
-        Student monica = new Student(22, "Monica", "Maier", 1301230, "BW-FS19");
-        Student philip = new Student(20, "Philip", "Mueller", 1282837, "BW-FS19");
-        Student chantal = new Student(18, "Chantal", "Lange", 3232123, "BW-FS19");
-        Student stefan = new Student(19, "Stefan", "Biermann", 1298329, "BW-FS19");
-        Student till = new Student(26, "Till", "Franke", 1029203, "BW-FS19");
-        Student emelie = new Student(23, "Emelie", "Beck", 1301230, "BW-FS19");
+        Student willy = new Student(23, "Willy", "Wanker", 3232123, "DBM-19");
+        Student suzanne = new Student(25, "Suzanne", "Mueller", 1298329, "DBM-19");
+        Student mary = new Student(20, "Mary", "Dean", 1029203, "BW-PM19D");
+        Student monica = new Student(22, "Monica", "Maier", 1301230, "INF-19A");
+        Student philip = new Student(20, "Philip", "Mueller", 1282837, "WIW-19IPL");
+        Student chantal = new Student(18, "Chantal", "Lange", 3232123, "STBUF-19");
+        Student stefan = new Student(19, "Stefan", "Biermann", 1298329, "BWLH-19");
+        Student till = new Student(26, "Till", "Franke", 1029203, "WI-19");
+        Student emelie = new Student(23, "Emelie", "Beck", 1301230, "DBM-19");
 
         List<Student> students = new ArrayList<>();
 
